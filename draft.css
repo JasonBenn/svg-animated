@@ -1,0 +1,13 @@
+.container {
+  background-color: #ffc0cb;
+  color: green;
+}
+.no-svg {
+  color: black;
+}
+.no-svg .si-icon-play {
+  background-image: url('png/play.png');
+}
+.no-svg .si-icon-monitor {
+  background-image: url('png/monitor.png');
+}
