@@ -1,28 +1,26 @@
 $('document').ready(function() {
 
-  var configuration = { 
-    play : {
-      url : 'svg/play.svg',
-      animation : [
-        { 
-          el : 'path', 
-          animProperties : { 
-            from : { val : '{"path" : "M 18.741071,52 31.30178,42.531655 45.258928,31.887987 18.741071,12 z"}' }, 
-            to : { val : '{"path" : "m 12.5,52 39,0 0,-40 -39,0 z"}' }
-          } 
-        }
-      ]
-    }
-  }
+  var s = Snap('#svg')
 
+  setInterval(function() {
+    var circle = s.circle(500, 500, 0)
 
-  var options = {
-    speed: 200,
-    easing: mina.linear,
-    size: { w: 64, h: 64 },
-    onLoad: function() { return true; }
-  }
+    circle.attr({
+      fill: '#fff',
+      stroke: 'blue',
+      strokeWidth: 5
+    })
 
-  new svgIcon($('.si-icon-play')[0], configuration, options)
+    circle.animate({
+      r: 300,
+      stroke: '#bada55',
+      opacity: 0
+    }, 3000, mina.easein)
+
+    setTimeout(function() {
+      circle.remove();
+    }, 3000)
+
+  }, 2000)
 
 });

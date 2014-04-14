@@ -1,13 +1,7 @@
 .container {
-  background-color: #ffc0cb;
-  color: green;
+  border: 1px solid black;
 }
-.no-svg {
-  color: black;
-}
-.no-svg .si-icon-play {
-  background-image: url('png/play.png');
-}
-.no-svg .si-icon-monitor {
-  background-image: url('png/monitor.png');
+#svg {
+  height: 800px;
+  width: 800px;
 }

@@ -6,13 +6,10 @@
   %link{:rel => "stylesheet", :href => "vendor/font-awesome/css/font-awesome.min.css"}/ 
   %link{:rel => "stylesheet", :href => "draft.css"}/ 
   %script{src: 'vendor/js/jquery-2.1.0.min.js'}
-  %script{src: 'vendor/js/snap.svg-min.js'}
-  %script{src: 'svg-icons.js'}
+  %script{src: 'vendor/js/snap.svg.js'}
   %script{src: 'draft.js'}
   %script{src: 'vendor/bootstrap/js/bootstrap.min.js'}
   %title Document
 %body 
   .container
-    %section.si-icons
-      %span.no-svg.si-icon.si-icon-play{data: {"icon-name" => "play"}}
-      %span.no-svg.si-icon.si-icon-monitor{data: {"icon-name" => "monitor"}}
+    %svg#svg
